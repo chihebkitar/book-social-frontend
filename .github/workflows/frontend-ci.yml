@@ -10,6 +10,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    # **Add the permissions block below**
+    permissions:
+      contents: read
+      security-events: write
+
     steps:
       - name: Check out the repository
         uses: actions/checkout@v3
@@ -25,6 +30,7 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      # **Temporarily skip the Test step by commenting it out**
       # - name: Test
       #   run: npm run test
 
