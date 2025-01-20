@@ -6,9 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "test": "ng test --watch=false --browsers=ChromeHeadlessCI",
     "api-gen": "ng-openapi-gen --input ./src/openapi/openapi.json --output ./src/app/services",
-    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\""
+    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
+    
   },
   "private": true,
   "dependencies": {

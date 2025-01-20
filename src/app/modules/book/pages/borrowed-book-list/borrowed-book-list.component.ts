@@ -14,7 +14,7 @@ import {FeedbackService} from '../../../../services/services/feedback.service';
 export class BorrowedBookListComponent implements OnInit {
   page = 0;
   size = 5;
-  pages: unknown = [];
+  pages: any = [];
   borrowedBooks: PageResponseBorrowedBookResponse = {};
   selectedBook: BookResponse | undefined = undefined;
   feedbackRequest: FeedbackRequest = {bookId: 0, comment: '', note: 0};

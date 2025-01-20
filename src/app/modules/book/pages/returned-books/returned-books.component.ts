@@ -12,7 +12,7 @@ export class ReturnedBooksComponent implements OnInit {
 
   page = 0;
   size = 5;
-  pages: unknown = [];
+  pages: any = [];
   returnedBooks: PageResponseBorrowedBookResponse = {};
   message = '';
   level: 'success' |'error' = 'success';
