@@ -15,6 +15,7 @@ export class BookDetailsComponent implements OnInit {
   feedbacks: PageResponseFeedbackResponse = {};
   page = 0;
   size = 5;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   pages: any = [];
   private bookId = 0;
 

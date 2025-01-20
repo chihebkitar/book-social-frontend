@@ -14,6 +14,7 @@ export class MyBooksComponent implements OnInit {
   bookResponse: PageResponseBookResponse = {};
   page = 0;
   size = 5;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   pages: any = [];
 
   constructor(

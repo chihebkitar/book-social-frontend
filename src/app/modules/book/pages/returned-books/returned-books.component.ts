@@ -12,6 +12,7 @@ export class ReturnedBooksComponent implements OnInit {
 
   page = 0;
   size = 5;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   pages: any = [];
   returnedBooks: PageResponseBorrowedBookResponse = {};
   message = '';

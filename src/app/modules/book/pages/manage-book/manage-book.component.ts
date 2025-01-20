@@ -17,6 +17,7 @@ export class ManageBookComponent implements OnInit {
     synopsis: '',
     title: ''
   };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   selectedBookCover: any;
   selectedPicture: string | undefined;
 
@@ -71,6 +72,7 @@ export class ManageBookComponent implements OnInit {
     });
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onFileSelected(event: any) {
     this.selectedBookCover = event.target.files[0];
     console.log(this.selectedBookCover);

@@ -14,6 +14,7 @@ import {FeedbackService} from '../../../../services/services/feedback.service';
 export class BorrowedBookListComponent implements OnInit {
   page = 0;
   size = 5;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   pages: any = [];
   borrowedBooks: PageResponseBorrowedBookResponse = {};
   selectedBook: BookResponse | undefined = undefined;
