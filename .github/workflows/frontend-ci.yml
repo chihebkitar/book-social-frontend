@@ -10,7 +10,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    # **Add the permissions block below**
+    # Add the permissions block to grant necessary permissions for CodeQL
     permissions:
       contents: read
       security-events: write
@@ -30,7 +30,7 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      # **Temporarily skip the Test step by commenting it out**
+      # Temporarily skip the Test step by commenting it out
       # - name: Test
       #   run: npm run test
 
@@ -44,7 +44,7 @@ jobs:
         uses: github/codeql-action/analyze@v2
 
       - name: Build Angular for production
-        run: npm run build -- --prod
+        run: npm run build -- --configuration production
 
       - name: Deploy to Netlify
         # Either use Netlify CLI via npx or the official action
