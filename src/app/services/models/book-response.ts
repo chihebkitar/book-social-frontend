@@ -1,5 +1,5 @@
 /* tslint:disable */
-/* eslint-disable */
+ 
 export interface BookResponse {
   archived?: boolean;
   authorName?: string;

@@ -13,7 +13,7 @@ export class BookListComponent implements OnInit {
   bookResponse: PageResponseBookResponse = {};
   page = 0;
   size = 5;
-  pages: any = [];
+  pages: unknown = [];
   message = '';
   level: 'success' |'error' = 'success';
 

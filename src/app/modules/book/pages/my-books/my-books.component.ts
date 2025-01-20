@@ -14,7 +14,7 @@ export class MyBooksComponent implements OnInit {
   bookResponse: PageResponseBookResponse = {};
   page = 0;
   size = 5;
-  pages: any = [];
+  pages: unknown = [];
 
   constructor(
     private bookService: BookService,

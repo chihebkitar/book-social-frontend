@@ -15,7 +15,7 @@ export class BookDetailsComponent implements OnInit {
   feedbacks: PageResponseFeedbackResponse = {};
   page = 0;
   size = 5;
-  pages: any = [];
+  pages: unknown = [];
   private bookId = 0;
 
   constructor(
